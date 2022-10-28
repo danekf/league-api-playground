@@ -15,12 +15,12 @@ Follow instructions that will be written here to setup the site with your person
 <ul>
 <li>[] - Setup environment variables for API key
 <li>[] - Create component for a single search
-  <ul>
+  <ol>
     <li>[] - Load static info with search parameter
     <li>[] - Create layout for a basic widget
     <li>[] - Add ability to modify search input
     <li>[] - Add expand option for widget to show more info
-  </ul>
+  </ol>
 <li>[] - Create second component for a different search (modeled on first component)
 <li>[] - Play and expand further
 </ul>
