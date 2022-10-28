@@ -1,6 +1,44 @@
 # LeagueApiPlayground
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+## The what
+This project will be an exploration of using the riot api. Starting goal is to create seperate widgets that can then be expanded to display extra information.
+
+## Generating a key
+In order to generate a key to use the Riot API, visit the [Riot developper website](https://developer.riotgames.com/).
+
+## Set api key in environment
+***Process still TBD***
+
+Follow instructions that will be written here to setup the site with your personal api key.
+
+## Project Roadmap
+<ul>
+<li>[] - Setup environment variables for API key
+<li>[] - Create component for a single search
+  <ul>
+    <li>[] - Load static info with search parameter
+    <li>[] - Create layout for a basic widget
+    <li>[] - Add ability to modify search input
+    <li>[] - Add expand option for widget to show more info
+  </ul>
+<li>[] - Create second component for a different search (modeled on first component)
+<li>[] - Play and expand further
+</ul>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### *↓↓ below to be removed at a later date ↓↓*
+# Angular default Readme stuff 
+
 
 ## Development server
 
