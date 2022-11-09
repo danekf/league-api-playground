@@ -1,5 +1,8 @@
 //Replace below with the key from RIOT dev website
 //And remove the .example from filename to begin use
-export const RIOT_API_KEY = 'YOUR_API_KEY_HERE';
+const RIOT_API_KEY = 'YOUR_API_KEY_HERE';
+
+const CURRENT_CHAMPION_LIST = 'http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion.json';
+export {RIOT_API_KEY, CURRENT_CHAMPION_LIST};
 
 

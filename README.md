@@ -9,6 +9,8 @@ In order to generate a key to use the Riot API, visit the [Riot developper websi
 ## Set api key in environment
 Rename "/src/environments/apiKeys.example" to apiKeys.ts and insert your API key generated in previous step, where indicated.
 
+## Updating the champion pool.
+In the apiKeys.ts file, there is a CURRENT_CHAMPION_LIST. This pulls JSON data for all champions in league at a current patch. This will need to be updated as patches come out, especially when new champions are released.
 
 ## Project Roadmap
 <ul>

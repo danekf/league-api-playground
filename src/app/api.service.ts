@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { RIOT_API_KEY } from 'src/environments/apiKey';
+import { RIOT_API_KEY, CURRENT_CHAMPION_LIST } from 'src/environments/apiKey';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -12,5 +12,7 @@ export class ApiService {
   getFreeChamps(){
     return this.http.get(`https://na1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${RIOT_API_KEY}`);
    }
+
+
 
 }
