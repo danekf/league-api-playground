@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { RIOT_API_KEY } from 'src/environments/apiKey';
+
 
 @Component({
   selector: 'app-root',
