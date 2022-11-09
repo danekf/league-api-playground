@@ -12,6 +12,6 @@ export class ApiService {
 
   getFreeChamps(){
     return this.http.get(`https://na1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${RIOT_API_KEY}`)
-  }
+   }
 
 }

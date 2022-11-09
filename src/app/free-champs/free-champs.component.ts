@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KeyValue } from '@angular/common';
 
 import { ApiService } from '../api.service';
 
@@ -8,9 +9,8 @@ import { ApiService } from '../api.service';
   styleUrls: ['./free-champs.component.scss']
 })
 export class FreeChampsComponent implements OnInit {
-  apiResponse = {};
-  freeChampionIds = [];
-  keys = [];
+  apiResponse: any;
+  parsedResponse: any;
 
   constructor(
     private api: ApiService
@@ -18,7 +18,11 @@ export class FreeChampsComponent implements OnInit {
 
   ngOnInit() {
     this.api.getFreeChamps().subscribe((data) =>{
+      //raw return of data
       this.apiResponse = data;
+
+      //parsed data
+      this.parsedResponse = this.apiResponse;
     });
   }
 
