@@ -3,14 +3,15 @@ import { KeyValue } from '@angular/common';
 
 import { ApiService } from '../api.service';
 
+
 @Component({
   selector: 'app-free-champs',
   templateUrl: './free-champs.component.html',
   styleUrls: ['./free-champs.component.scss']
 })
 export class FreeChampsComponent implements OnInit {
-  apiResponse: any;
-  parsedResponse: any;
+  parsedResponse = {};
+  freeChampions: any;
 
   constructor(
     private api: ApiService
@@ -18,12 +19,8 @@ export class FreeChampsComponent implements OnInit {
 
   ngOnInit() {
     this.api.getFreeChamps().subscribe((data) =>{
-      //raw return of data
-      this.apiResponse = data;
-
-      //parsed data
-      this.parsedResponse = this.apiResponse;
+      this.parsedResponse = data;
+      this.freeChampions = Object.keys(data);
     });
   }
-
 }

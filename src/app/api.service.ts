@@ -9,9 +9,8 @@ export class ApiService {
   //setup http as the call to use HttpClient, just shorthand private method here.
   constructor(private http: HttpClient) { }
 
-
   getFreeChamps(){
-    return this.http.get(`https://na1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${RIOT_API_KEY}`)
+    return this.http.get(`https://na1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${RIOT_API_KEY}`);
    }
 
 }
