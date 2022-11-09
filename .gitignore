@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # environment files
-apiKey.env
+apiKey.ts

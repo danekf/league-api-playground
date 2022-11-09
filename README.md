@@ -7,9 +7,8 @@ This project will be an exploration of using the riot api. Starting goal is to c
 In order to generate a key to use the Riot API, visit the [Riot developper website](https://developer.riotgames.com/). 
 
 ## Set api key in environment
-***Process still TBD***
+rename "/src/environments/apiKeys.example" to apiKeys.ts and insert your API key generated in previous step, where indicated.
 
-Follow instructions that will be written here to setup the site with your personal api key.
 
 ## Project Roadmap
 <ul>

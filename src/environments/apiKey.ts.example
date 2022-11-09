@@ -1,0 +1,5 @@
+//Replace below with the key from RIOT dev website
+//And remove the .example from filename to begin use
+export const RIOT_API_KEY = 'YOUR_API_KEY_HERE';
+
+
