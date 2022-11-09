@@ -10,8 +10,9 @@ import { ApiService } from '../api.service';
   styleUrls: ['./free-champs.component.scss']
 })
 export class FreeChampsComponent implements OnInit {
+  apiResponse: any;
+  freechampions = [];
   parsedResponse = {};
-  freeChampions: any;
 
   constructor(
     private api: ApiService
@@ -19,8 +20,7 @@ export class FreeChampsComponent implements OnInit {
 
   ngOnInit() {
     this.api.getFreeChamps().subscribe((data) =>{
-      this.parsedResponse = data;
-      this.freeChampions = Object.keys(data);
+      this.apiResponse = data;
     });
   }
 }
